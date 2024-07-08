@@ -1,0 +1,1516 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@font-face {
+  font-family: Lucida Bright Demibold sans-serif;
+  src: url("../fonts/lucida/48350493-ffb7-4921-baa9-2bf2ff57116b/");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --blue: #324486;
+  --green: #2ecb70;
+  --sky: #427ffc;
+  --yellow: #fec938;
+  --pink: #fc427f;
+  --orange: #fc5f42;
+  --violet: #ad33c6;
+  --gray: #f8f8f8;
+  --lightgray: #d6d6d6;
+  --lightergray: #818181;
+  --lightblack: #2f2f2f;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+body {
+  /* background-color: aqua; */
+}
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+.common_padding {
+  padding-left: 135px;
+  padding-right: 135px;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Lucida Bright Demibold sans-serif;
+  font-size: 42px;
+  color: var(--green);
+  margin-bottom: 35px;
+}
+h2 {
+  font-family: Lucida Bright Demibold sans-serif;
+  font-size: 32px;
+}
+h3 {
+  font-family: Lucida Bright Demibold sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+h4 {
+  font-family: Lucida Bright Demibold sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.border_right {
+  border-right: 2px solid gray;
+  font-size: 22px;
+}
+
+/* nav */
+.toggler {
+  display: none;
+}
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.logopart {
+  width: 20%;
+  background-color: var(--green);
+  text-align: center;
+}
+.logopart .logoimg img {
+  width: 25%;
+}
+.logopart .logotext {
+  color: white;
+  font-size: 26px;
+  font-family: Lucida Bright Demibold sans-serif;
+}
+.nav_content {
+  width: 80%;
+  background-color: var(--blue);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.nav_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: black; */
+}
+.nav_link {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.nav_link ul {
+  display: flex;
+}
+.nav_link ul li {
+  margin-left: 50px;
+}
+.nav_link ul li a {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+.nav_link ul li a.active {
+  color: var(--green);
+}
+
+.social_contacts span {
+  padding: 0 10px;
+  font-size: 22px;
+}
+/* banner */
+.banner {
+  height: 550px;
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+.banner_text_part {
+  height: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner_text {
+  width: 50%;
+}
+.banner_text .text1 {
+  color: var(--blue);
+  font-size: 24px;
+  border-bottom: 2px solid var(--blue);
+  margin-bottom: 35px;
+}
+.banner_text h1 span {
+  color: var(--blue);
+}
+.banner_text p {
+  margin-bottom: 30px;
+}
+.banner_text .banner_btn {
+  background-color: var(--blue);
+  color: white;
+  padding: 15px 17px;
+  border-radius: 25px;
+}
+/* industry */
+.industry {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.industry_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  right: 0;
+}
+.industry_content .card {
+  width: 32%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  color: white;
+}
+.bg1 {
+  background-color: var(--sky);
+}
+.bg2 {
+  background-color: var(--yellow);
+}
+.bg3 {
+  background-color: var(--pink);
+  /* border: 1px solid black; */
+}
+.industry_content .card figure img {
+  width: 85%;
+}
+.industry_content .card_text h3 {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+.industry_content .card_text p a {
+  color: white;
+}
+/* course */
+.course {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.course_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course h2 {
+  color: var(--green);
+  margin-bottom: 50px;
+}
+.course_content .card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--gray);
+  margin-bottom: 20px;
+  padding: 40px 20px;
+}
+.course_content .card_text {
+  padding-left: 20px;
+}
+.course_content .card_text p {
+  font-size: 14px;
+}
+.border_green {
+  border-right: 5px solid var(--green);
+}
+.border_blue {
+  border-right: 5px solid var(--blue);
+}
+.border_pink {
+  border-right: 5px solid var(--pink);
+}
+.border_orange {
+  border-right: 5px solid var(--orange);
+}
+.border_yellow {
+  border-right: 5px solid var(--yellow);
+}
+.border_violet {
+  border-right: 5px solid var(--violet);
+}
+.form_part {
+  width: 100%;
+  background-color: var(--gray);
+  padding: 25px;
+}
+.course_content .left_part,
+.course_content .middle_part,
+.course_content .right_part {
+  width: 32%;
+}
+
+.form_part .heading_text {
+  color: var(--green);
+  font-size: 26px;
+  font-family: Lucida Bright Demibold sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  background-color: white;
+  border: 2px solid var(--gray);
+  margin-bottom: 16px;
+  padding: 13px 16px;
+}
+textarea {
+  margin-bottom: 40px;
+}
+.form_part p {
+  text-align: center;
+}
+.form_part p a {
+  color: var(--blue);
+  padding: 13px 28px;
+  border: 2px solid var(--blue);
+  border-radius: 27px;
+  font-size: 20px;
+}
+/* about */
+.about {
+  background: linear-gradient(to right, #2ecb70 58%, white 30%);
+}
+
+.about_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_content .left_part {
+  width: 60%;
+  color: white;
+  /* border: 1px solid red; */
+}
+.about_content .right_part {
+  width: 40%;
+  height: 503px;
+  position: relative;
+  mix-blend-mode: inherit;
+  /* border: 1px solid black; */
+}
+.about_content .left_part h2 {
+  margin-bottom: 50px;
+}
+.about_content .left_part .text1 {
+  margin-bottom: 30px;
+}
+.about_content .left_part .text2 {
+  margin-bottom: 40px;
+}
+.about_content .left_part p a {
+  color: white;
+}
+
+.about_content .right_part .pause_btn {
+  font-size: 40px;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  border: 10px solid white;
+  padding: 13px 26px;
+  border-radius: 100%;
+}
+.pause_btn i {
+  color: white;
+}
+/* SEMINAR */
+.seminar {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(to right, white 57.75%, #2ecb70 20%);
+}
+.seminar_text_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.seminar_text_part h2 span {
+  color: var(--green);
+}
+.seminar_text_part p {
+  color: white;
+}
+.seminar_content .card {
+  width: 25%;
+  height: 221px;
+  background-color: var(--gray);
+  display: flex;
+  align-items: center;
+}
+.seminar_content .upper_row,
+.seminar_content .lower_row {
+  display: flex;
+  align-items: center;
+}
+.seminar_content .card_text {
+  padding: 10px;
+}
+.seminar_content .card_text .date {
+  color: var(--lightgray);
+}
+.seminar_content .card_text h3 {
+  color: var(--lightblack);
+  margin-bottom: 15px;
+}
+.seminar_content .card_text p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--lightergray);
+}
+.seminar_content .card_text p a {
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
+}
+/* events */
+.events {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background: linear-gradient(to right, white 57.75%, #2ecb70 20%);
+}
+.events_text_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.events_text_part h2 {
+  margin-bottom: 35px;
+}
+.events_text_part h2 span {
+  color: var(--green);
+}
+.events_text_part p {
+  color: white;
+  border-bottom: 1px solid white;
+}
+.events_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.events_content .left_part {
+  width: 60%;
+}
+.events_content .right_part {
+  width: 40%;
+  height: 282px;
+  padding: 55px;
+  background-color: white;
+}
+.events_content .right_part h3 {
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+.events_content .right_part p {
+  margin-bottom: 25px;
+}
+.events_content .right_part p a {
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
+  font-weight: 700;
+}
+/* admission */
+.admission {
+  background: linear-gradient(to right, #2ecb70 58%, white 30%);
+  color: white;
+}
+.admission_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.admission_content .left_part {
+  width: 55%;
+}
+.admission_content .right_part {
+  width: 45%;
+  height: 500px;
+}
+.admission_content .left_part h2 {
+  margin-bottom: 35px;
+}
+.admission_content .left_part p {
+  margin-bottom: 30px;
+}
+.admission_content p a {
+  color: white;
+  border-bottom: 1px solid white;
+}
+/* skill */
+.skill {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.skill_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill_content .left_part {
+  border: 25px solid var(--blue);
+  width: 400px;
+  height: 476px;
+  z-index: 2;
+  position: relative;
+}
+.skill_content .left_part figure {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 55px;
+  z-index: 1;
+}
+.skill_content .right_part {
+  width: 40%;
+}
+.skill_content .right_part h2 {
+  color: var(--green);
+  margin-bottom: 35px;
+}
+.skill_content .right_part h2 span {
+  color: var(--blue);
+}
+.skill_content .right_part p {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.skill_content .right_part ul li {
+  font-weight: 600;
+  color: var(--blue);
+  font-size: 14px;
+}
+.skill_content .right_part ul {
+  margin-bottom: 40px;
+}
+.skill_content .right_part ul li i {
+  padding: 5px;
+  border: 1px solid var(--blue);
+  border-radius: 100%;
+  background-color: var(--blue);
+  color: white;
+  margin-bottom: 25px;
+  margin-right: 15px;
+}
+.skill_content .right_part p a {
+  padding: 13px 33px;
+  border: 2px solid var(--blue);
+  border-radius: 27px;
+  font-weight: 600;
+  font-size: 16px;
+}
+/* degree */
+.degree {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: var(--gray);
+}
+.degree_text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--blue);
+}
+.degree_text h2 {
+  color: var(--green);
+  margin-bottom: 40px;
+}
+.degree_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.degree_content .card {
+  width: 32%;
+  position: relative;
+}
+/* .degree_content .color-overlay{
+  background-color: rgba(red, green, blue, var(--blue));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+.degree_content .card_text {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateY(-50%);
+  transform: translateX(-30%);
+  color: white;
+  /* mix-blend-mode: overlay; */
+}
+/* member */
+.member {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.member_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.member_text h2 span {
+  color: var(--green);
+}
+.member_text p {
+  color: var(--green);
+  border-bottom: 1px solid var(--green);
+}
+.member_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.member_content .card {
+  width: 24%;
+}
+.member_content .card_text {
+  background-color: var(--gray);
+  text-align: center;
+  padding: 20px 15px;
+}
+.member_content .card_text h3 {
+  margin-bottom: 10px;
+  color: var(--blue);
+}
+.member_content .card_text h5 {
+  margin-bottom: 25px;
+}
+/* news */
+.news {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--gray);
+}
+.news h2 span {
+  color: var(--green);
+}
+.news h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* .news_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+.news_content .card {
+  width: 25%;
+  height: 221px;
+  background-color: var(--gray);
+  display: flex;
+  align-items: center;
+}
+.news_content .upper_row,
+.news_content .lower_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news_content .upper_row {
+  margin-bottom: 20px;
+}
+.news_content .upper_row .card,
+.news_content .lower_row .card {
+  margin-right: 20px;
+}
+.news_content .card_text h3 {
+  color: var(--blue);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.news_content .card_text h3 span {
+  font-size: 35px;
+  color: rgb(155, 154, 154);
+}
+.news_content .card_text p {
+  font-size: 14px;
+  color: rgb(180, 180, 180);
+  margin-bottom: 10px;
+}
+.news_content .card_text a {
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
+}
+footer {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: var(--blue);
+  color: white;
+}
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.footer_content .card {
+  width: 25%;
+}
+.footer_content .footer_heading_text {
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+.edulearn_content {
+  width: 70%;
+}
+.edulearn_content p {
+  margin-bottom: 15px;
+  line-height: 27px;
+}
+.edulearn_content a {
+  color: white;
+  border-bottom: 1px solid white;
+}
+.list_content ul li {
+  margin-bottom: 7px;
+}
+.list_content ul li a {
+  font-size: 14px;
+}
+.contact_content p {
+  margin-bottom: 15px;
+}
+.contact_content p i {
+  margin-right: 15px;
+}
+.contact_content .social_links i {
+  padding: 8px 12px;
+  border: 1px solid white;
+  border-radius: 100%;
+  background-color: white;
+  color: var(--blue);
+}
+@media screen and (min-width: 1440px) {
+}
+@media screen and (max-width: 1199px) {
+  .common_padding {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  /* nav */
+  .logopart .logoimg img {
+    width: 25%;
+  }
+  .nav_content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .nav_link {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  /* industry */
+  .industry_content {
+    bottom: -20px;
+  }
+  .industry_content .card {
+    padding: 25px 20px;
+  }
+  .industry_content .card_text h3 {
+    margin-bottom: 18px;
+  }
+  /* course */
+  .course {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .course_content .left_part,
+  .course_content .middle_part,
+  .course_content .right_part {
+    width: 31%;
+  }
+  .course_content .card {
+    padding: 30px 10px;
+  }
+  .course_content .card_text {
+    padding-left: 15px;
+  }
+  .form_part p a {
+    padding: 10px 23px;
+    font-size: 17px;
+  }
+  input {
+    margin-bottom: 10px;
+  }
+  ::placeholder {
+    padding: 10px 14px;
+  }
+  /* about */
+  .about_content .right_part {
+    height: 467px;
+  }
+  /* seminar */
+  .seminar_content .card {
+    height: 202px;
+  }
+  /* events */
+  .events_content .right_part {
+    height: 262px;
+  }
+  /* admission */
+  .admission_content .right_part {
+    height: 465px;
+  }
+  /* skill */
+  .skill_content .left_part {
+    height: 370px;
+    width: 390px;
+  }
+  .skill_content .left_part figure {
+    top: 25px;
+  }
+  .skill_content .right_part {
+    width: 50%;
+  }
+  .skill_content .right_part h2 {
+    margin-bottom: 28px;
+  }
+  .skill_content .right_part ul {
+    margin-bottom: 30px;
+  }
+  .skill_content .right_part ul li i {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .common_padding {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 12px;
+  }
+
+  /* nav */
+  .logopart .logoimg img {
+    width: 30%;
+  }
+  .logopart .logotext {
+    font-size: 20px;
+  }
+  .nav_link ul li {
+    margin-left: 30px;
+  }
+  .nav_link ul li a {
+    font-size: 15px;
+  }
+  /* banner */
+  .banner {
+    height: 500px;
+  }
+  .banner_text_part {
+    height: 500px;
+  }
+  .banner_text {
+    width: 55%;
+  }
+  .banner_text .text1 {
+    margin-bottom: 25px;
+  }
+  /* industry */
+  .industry_content {
+    bottom: -15px;
+  }
+  .industry_content .card_text p a {
+    font-size: 14px;
+  }
+  /* course */
+  .course_content .left_part,
+  .course_content .middle_part,
+  .course_content .right_part {
+    width: 30%;
+  }
+  .course_content figure img {
+    width: 100%;
+  }
+  .course_content .card_text p {
+    font-size: 12px;
+  }
+  .form_part .heading_text {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  input,
+  select,
+  textarea {
+    padding: 10px 12px;
+  }
+  textarea {
+    margin-bottom: 10px;
+  }
+  .form_part p a {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  /* about */
+  .about_content .left_part {
+    width: 50%;
+  }
+  .about_content .left_part h2 {
+    margin-bottom: 30px;
+  }
+  .about_content .right_part {
+    width: 50%;
+    height: 465px;
+  }
+  .about_content .right_part .pause_btn {
+    font-size: 30px;
+    padding: 12px 22px;
+  }
+  /* seminar */
+  .seminar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .seminar_content .card {
+    height: 162px;
+  }
+  .seminar_content .card_text h3 {
+    margin-bottom: 5px;
+  }
+  .seminar_content .card_text p {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  /* events */
+  .events {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .events_content .right_part {
+    height: 204px;
+    padding: 30px;
+  }
+  .events_content .right_part h3 {
+    margin-bottom: 15px;
+  }
+  /* admission */
+  .admission_content .left_part {
+    width: 60%;
+  }
+  .admission_content .right_part {
+    width: 40%;
+    height: 460px;
+  }
+  .admission_content .left_part h2 {
+    margin-bottom: 15px;
+  }
+  /* skill */
+  .skill {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .skill_content .left_part {
+    width: 360px;
+    height: 340px;
+  }
+  .skill_content .left_part figure {
+    top: 20px;
+  }
+  .skill_content .right_part {
+    width: 40%;
+  }
+  .skill_content .right_part p {
+    margin-bottom: 22px;
+  }
+  .skill_content .right_part ul li i {
+    margin-bottom: 10px;
+  }
+  .skill_content .right_part p a {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  /* news */
+  .news {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .news_content .upper_row {
+    margin-bottom: 0px;
+  }
+  .news_content .card_text h3 span {
+    font-size: 25px;
+  }
+  .news_content .card_text p {
+    font-size: 12px;
+  }
+  .news_content .card_text a {
+    font-size: 12px;
+  }
+  /* footer */
+  footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .footer_content {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* width: 40%; */
+  }
+  .footer_content .card {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .common_padding {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .nav_container {
+    background-color: var(--green);
+  }
+  .nav_content {
+    background-color: var(--green);
+  }
+  .logopart {
+    width: 80%;
+  }
+  .logopart .logoimg img {
+    text-align: center;
+    width: 15%;
+  }
+  .logopart .logotext p {
+    font-size: 13px;
+  }
+  .nav_items {
+    position: relative;
+  }
+  .nav_link {
+    display: none;
+  }
+  .toggler {
+    display: block;
+    position: absolute;
+    left: 180px;
+    top: -13px;
+  }
+  .toggler i {
+    font-size: 24px;
+  }
+
+  .nav_content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .social_contacts {
+    display: none;
+  }
+  /* banner */
+  .banner {
+    height: 400px;
+  }
+  .banner_text_part {
+    height: 400px;
+  }
+  .banner_text {
+    width: 50%;
+  }
+  .banner_text .text1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .banner_text .banner_btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  /* industry */
+
+  .industry_content {
+    bottom: -10px;
+  }
+  .industry_content .card_text p a {
+    font-size: 12px;
+  }
+  .industry_content .card {
+    width: 31%;
+    padding: 15px;
+  }
+  /* course */
+  .course {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .course_content {
+    flex-direction: column;
+  }
+  .course_content .left_part,
+  .course_content .middle_part,
+  .course_content .right_part {
+    width: 100%;
+  }
+  /* about */
+  .about_content {
+    flex-direction: column;
+  }
+  .about {
+    background: linear-gradient(var(--green) 100%, white 0%);
+  }
+  .about_content .left_part {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    mix-blend-mode: calc();
+  }
+  .about_content .right_part {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .about_content .right_part figure img {
+    width: 60%;
+  }
+  .about_content .right_part .pause_btn {
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* skill */
+  .skill_content {
+    flex-direction: column;
+  }
+  .skill_content .left_part {
+    width: 388px;
+    height: 360px;
+    margin-bottom: 30px;
+  }
+  .skill_content .left_part figure {
+    right: 20px;
+  }
+  .skill_content .right_part {
+    width: 80%;
+  }
+  /* member */
+  .member_content {
+    flex-wrap: wrap;
+  }
+  .member_content .card {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .member_content .card_text p {
+    font-size: 12px;
+  }
+  /* news */
+  .news_content .upper_row,
+  .news_content .lower_row {
+    flex-wrap: wrap;
+  }
+  .news_content .card {
+    width: 40%;
+  }
+  /* footer */
+  .footer_content {
+    flex-wrap: wrap;
+  }
+  .footer_content .card {
+    width: 40%;
+    margin-bottom: 30px;
+  }
+  .footer_content .footer_heading_text {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .common_padding {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  h1 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h5{
+    font-size: 18px;
+  }
+  p {
+    font-size: 12px;
+  }
+  /* nav */
+  .toggler {
+    left: 130px;
+  }
+  /* banner */
+  .banner {
+    height: 300px;
+  }
+  .banner_text_part {
+    height: 300px;
+  }
+  .banner_text {
+    width: 65%;
+  }
+  .banner_text .text1 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  .banner_text p {
+    margin-bottom: 15px;
+  }
+  .banner_text .banner_btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  /* industry */
+  .industry {
+    margin-bottom: 160px;
+  }
+  .industry_content {
+    flex-direction: column;
+    top: -80px;
+  }
+  .industry_content .card {
+    width: 80%;
+    padding: 15px;
+  }
+  /* course */
+  .course h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  /* about */
+  .about_content .right_part .pause_btn {
+    font-size: 20px;
+    top: 150px;
+    border: 5px solid white;
+    padding: 10px 18px;
+  }
+
+  /* skill */
+  .skill_content .left_part {
+    width: 340px;
+    height: 320px;
+  }
+  .skill_content .left_part figure {
+    top: 15px;
+  }
+  /* degree */
+  .degree {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .degree_text p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .degree_text h2 {
+    margin-bottom: 20px;
+  }
+  .degree_content {
+    flex-wrap: wrap;
+  }
+  .degree_content .card {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  /* member */
+  .member {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .member_text {
+    margin-bottom: 20px;
+  }
+  .member_content .card_text {
+    padding: 10px 15px;
+  }
+  .member_content .card_text h3 {
+    margin-bottom: 5px;
+  }
+  .member_content .card_text h5 {
+    margin-bottom: 15px;
+  }
+  /* news */
+.news {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.news h2 {
+  margin-bottom: 20px;
+}
+/* footer */
+.list_content ul li a {
+  font-size: 10px;
+}
+}
+@media screen and (max-width: 489px) {
+  h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  h5{
+    font-size: 14px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .common_padding {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* nav */
+
+  .toggler i {
+    font-size: 20px;
+  }
+  /* banner */
+  .banner {
+    height: 230px;
+  }
+  .banner_text_part {
+    height: 230px;
+  }
+  .banner_text {
+    width: 70%;
+  }
+  .banner_text .text1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .banner_text .banner_btn {
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+  /* member */
+
+
+}
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 8px;
+  }
+  /* nav */
+  .nav_content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .logopart .logotext p {
+    font-size: 10px;
+  }
+  .toggler {
+    left: 90px;
+  }
+  /* banner */
+  .banner {
+    height: 150px;
+  }
+  .banner_text_part {
+    height: 150px;
+  }
+  .banner_text {
+    width: 90%;
+  }
+  .banner_text .text1 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .banner_text p {
+    margin-bottom: 6px;
+  }
+  .banner_text .banner_btn {
+    padding: 5px 8px;
+    font-size: 8px;
+  }
+  /* industry */
+  .industry {
+    margin-bottom: 200px;
+  }
+  .industry_content {
+    top: -45px;
+  }
+  /* course */
+  .course_content .heading_text {
+    font-size: 16px;
+  }
+  /* about */
+  .about_content .left_part {
+    margin-bottom: 5px;
+  }
+  .about_content .left_part h2 {
+    margin-bottom: 15px;
+  }
+  .about_content .left_part .text1 {
+    margin-bottom: 10px;
+  }
+  .about_content .left_part .text2 {
+    margin-bottom: 10px;
+  }
+  .about_content .right_part {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .about_content .right_part .pause_btn {
+    font-size: 15px;
+    top: 80px;
+    padding: 7px 12px;
+    border: 4px solid white;
+  }
+  /* skill */
+  .skill_content .left_part {
+    border: 18px solid var(--blue);
+    width: 200px;
+    height: 170px;
+    margin-bottom: 18px;
+  }
+  .skill_content .left_part figure {
+    left: 0;
+    top: 1px;
+  }
+  .skill_content .right_part {
+    width: 100%;
+  }
+  .skill_content .right_part h2 {
+    margin-bottom: 10px;
+  }
+  .skill_content .right_part p {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .skill_content .right_part p a {
+    padding: 8px 15px;
+  }
+  /* degree */
+  .degree_content .card{
+    width: 100%;
+  }
+  .degree_content .card_text {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* member */
+  .member_text {
+    margin-bottom: 15px;
+    flex-direction: column;
+  }
+  .member_content .card {
+    width: 100%;
+  }
+  /* news */
+  .news_content .card{
+    width: 100%;
+  }
+  .news_content .upper_row .card_text{
+    order: 2;
+  }
+  .news_content .upper_row .card_img{
+    order: 1;
+  }
+  .news_content .lower_row .card_text{
+    order: 2;
+  }
+  .news_content .lower_row .card_img{
+    order: 1;
+  }
+  /* footer */
+  .footer_content{
+    text-align: center;
+  }
+  .footer_content .footer_heading_text{
+    font-size: 20px;
+  }
+  .footer_content .edulearn_content{
+    width: 100%;
+  }
+  .edulearn_content a{
+font-size: 10px;
+  }
+  .footer_content .card{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .list_content ul li a {
+    font-size: 10px;
+  }
+  .contact_content .social_links i {
+    padding: 4px 8px;
+  }
+}
